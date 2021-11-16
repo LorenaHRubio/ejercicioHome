@@ -3,7 +3,7 @@
 ======================*/
 
 body{
-    background-color: hsl(226 63% 45%);
+    /*background-color: hsl(226 63% 45%);*/
     display:flex; 
     flex-direction:column;    
     margin: 1em auto;
@@ -14,22 +14,7 @@ body{
 header{
     display: flex;
     height: 10vh;
-    justify-content: space-between;
-}
-
-.header-all
-{
-    display:flex;
-}
-
-.menu-barra-hamburguesa span/*las lineas*/
-{
-    display: block;
-    background: hsl(0, 0%, 100%);
-    width: 2.5em;
-    height: 0.2vh;
-    margin-top: 0.5em;
-
+    justify-content:start;
 }
 
 main{
@@ -55,7 +40,7 @@ footer{
 ======================*/
 
 h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
 }
 
 h1, h2, h3, h4 {
@@ -119,35 +104,89 @@ img {
     width: max-content;
 }
 
-.logo__image svg{
+.logo svg{
     height: 3em;
     width: 3em;
 }
 
-.logo__image svg path{
-    fill:hsl(19, 100%, 50%);
+.logo svg path{
+    fill:hsl(167, 95%, 48%);
 }
 
-.logo__title{
+.title{
     margin-left: 1em;
 }
 
-.logo__title h1{
+.title h1{
     text-align: left;
 }
 
 /*====================
-========Subtitle======
+========MENU======
 ======================*/
 
-.subtitle{
+.menu{
     background-color: hsl(207, 85%, 69%);
     padding: 0.2em 0;
     width: 100%;
+    overflow: hidden;
 }
 
-.subtitle h2{
+.menu a
+{
+    float: right;
+    display: block;
+    color: hsl(0, 0%, 95%);
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*====================
+=========IMAGEN=========
+======================*/
+
+.image img
+{
+    width: 100%;
+}
+
+/*=======================================
+=========IMAGEN CON TEXTO ENCIMA=========
+=========================================*/
+
+.image
+{
+    position: relative;
+    text-align: center;
+}
+
+.image__description
+{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+/*=========================
+=========NOVEDADES=========
+=========================*/
+
+.new
+{
+    justify-content:center;
+    display: flex;
+    padding-top: 3em;
+    min-width: 45%;
+    max-width: 45%;
+    
+}
+
+.new__second, .new__third
+{
+    padding-left: 1em;
 }
 
 /*====================
