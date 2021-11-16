@@ -14,8 +14,10 @@ body{
 header{
     display: flex;
     height: 10vh;
-    justify-content:start;
+    justify-content:space-between;
 }
+
+
 
 main{
     margin: 1em 0;
@@ -33,6 +35,39 @@ footer{
 
 .footer-element{
     margin-bottom: 1em;
+}
+/*====================
+========MENU==========
+======================*/
+
+.menu{
+    display:flex;
+    /*background-color: hsl(207, 85%, 69%);*/
+    padding: 0.2em 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.join, .dates, .who
+{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.join{
+    color: hsl(205deg, 65%, 41%);
+}
+
+.who{
+    color: hsl(145deg, 97%, 31%);
+}
+
+.dates{
+    color: hsl(359deg, 79%, 57%);
 }
 
 /*====================
@@ -98,56 +133,21 @@ img {
 /*====================
 ========Logo=========
 ======================*/
-
+    
 .logo{
     display: flex;
     width: max-content;
-}
-
-.logo svg{
-    height: 3em;
-    width: 3em;
-}
-
-.logo svg path{
-    fill:hsl(167, 95%, 48%);
-}
-
-.title{
-    margin-left: 1em;
-}
-
-.title h1{
+    position: relative;
     text-align: left;
 }
 
-/*====================
-========MENU======
-======================*/
 
-.menu{
-    background-color: hsl(207, 85%, 69%);
-    padding: 0.2em 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.menu a
-{
-    float: right;
-    display: block;
-    color: hsl(0, 0%, 95%);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
 
 /*====================
 =========IMAGEN=========
 ======================*/
 
-.image img
+.image-down img
 {
     width: 100%;
 }
@@ -156,13 +156,13 @@ img {
 =========IMAGEN CON TEXTO ENCIMA=========
 =========================================*/
 
-.image
+.image-down
 {
     position: relative;
     text-align: center;
 }
 
-.image__description
+.image-down__description
 {
     text-align: center;
     position: absolute;
@@ -176,7 +176,7 @@ img {
 
 .new
 {
-    justify-content:center;
+    justify-content:space-between;
     display: flex;
     padding-top: 3em;
     min-width: 45%;
@@ -189,6 +189,14 @@ img {
     padding-left: 1em;
 }
 
+.new__first p, .new__second p, .new__third p
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.new p{
+    box-align: end;
+}
 /*====================
 =========CRUD=========
 ======================*/
