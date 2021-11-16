@@ -13,7 +13,8 @@ body{
 
 header{
     display: flex;
-    height: 10vh;
+    height: 10.2vh;
+    
     justify-content:space-between;
 }
 
@@ -39,9 +40,13 @@ footer{
 /*====================
 ========MENU==========
 ======================*/
-
+.logo-up
+{
+    width: 100%;
+    background: hsl(0, 0%, 0%);
+}
 .menu{
-    display:flex;
+    display:grid;
     /*background-color: hsl(207, 85%, 69%);*/
     padding: 0.2em 0;
     width: 100%;
