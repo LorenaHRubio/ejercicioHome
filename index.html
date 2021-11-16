@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
+		<link rel="shortcut icon" href="images/fantasy-icon-256.png">
 
-		<title>Título</title>
+		<title>La Movida</title>
 		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
         <meta name="keywords" 	 content="palabras clave, separadas, por comas">
 
@@ -23,76 +23,41 @@
     
     <body>
         <header>
-            <div class="menu-hamburguesa">
-                <label>
-                    <div class="menuboton">
-                        <span></span><!--cada span es una linea de la hamburguesa-->
-                        <span></span>
-                        <span></span><!--aquí también podemos utilizar la etiqueta i, creo, no lo sé seguro para hacer las lineas del menú-->
-                    </div>
-                </label>
-               <input type="checkbox" id="menucheckbox"/>
-               <nav class="menulinks">
-                   <ul class="prueba">
-                       <li><a href="https://thispersondoesnotexist.com/">Primera página</a></li>
-                       <li><a href="https://thispersondoesnotexist.com/">Segunda página</a></li>
-                       <li><a href="https://thispersondoesnotexist.com/">Tercera página</a></li>
-                   </ul>
-               </nav>
-           </div>
             <div class="header-element logo">
                 <svg viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M11,17H13V19H11V17M14,17H16V19H14V17M9,4H11V15A4,4 0 0,1 7,19H5A3,3 0 0,1 2,16V12H4V16A1,1 0 0,0 5,17H7C8.11,17 9,16.11 9,15V4M12,4H14V13H17V8H19V13C19,14.11 18.11,15 17,15H14C12.89,15 12,14.11 12,13V4M20,10H22V17A3,3 0 0,1 19,20H17V18H19A1,1 0 0,0 20,17V10Z" />
+                    <path fill="currentColor" d="M20 12V19L17 20L14 15.33C13.71 14.89 13 15.14 13.08 15.67L14 23L4 18L4.96 12.75C5.56 9.42 8.46 7 11.84 7H13L19 1L17 7H20L18.42 9.37C19.36 9.88 20 10.86 20 12Z" />
                 </svg><!--la imagen es un vector-->
             </div>
 
             <div class="header-element title">
-                <h1>Título</h1>
+                <h1>La Movida</h1>
+                <h4>El Musical</h4>
             </div>
            
         </header>
 
         <main>
-            <div class="main-element subtitle">
-                <h2>Subtítulo</h2>
+            <div class="main-element menu">
+                <a href="#"><i>Únete</i></a> 
+                <a href="#"><i>Fechas</i></a> 
+                <a href="#"><i>Quiénes Somos</i></a> 
             </div>
-
-            <div class="main-element crud">
-                <div class="crud__table">
-                    <table>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Mail</th>
-                        </tr>
-                        <tr>
-                            <td>45823645</td>
-                            <td>45873645</td>
-                            <td>45825445</td>
-                        </tr>
-                        <tr>
-                            <td>Alec</td>
-                            <td>Alen</td>
-                            <td>Aler</td>
-                        </tr>
-                    </table>   
+            
+            <div class="image">
+                <img src="images/Movida.webp">
+                <div class="image__description">
+                    <p>Somos los mejores</p>
                 </div>
-                <div class="crud__form">
-                    <form class="crud__admin-form" id="crud__user-form" action="/users/create" autocomplete="off"> 
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="name">Nombre</label>
-                            </div>
-
-                            <div class="crud__form-input">
-                                <input type="text" name="name">
-                            </div>
-                        </div>
-
-                        <div class="crud__form-element">
-                            <button class="crud__store-button">Guardar</button>
-                        </div>
-                    </form>
+            </div>
+            <div class="main-element new">
+                <div class="new__first">
+                    <img src="images/movida2.webp">
+                </div>
+                <div class="new__second">
+                    <img src="images/movida2.webp">
+                </div>
+                <div class="new__third">
+                    <img src="images/movida2.webp">
                 </div>
             </div> 
         </main>
