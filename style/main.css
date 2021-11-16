@@ -3,7 +3,11 @@
 ======================*/
 
 body{
-    /*background-color: hsl(226 63% 45%);*/
+    background-image: url("https://partituramusic.com/wp-content/uploads/2018/04/diario-textura-1024x768.jpg");
+    background-color: hsl(208, 100%, 97%);
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
     display:flex; 
     flex-direction:column;    
     margin: 1em auto;
@@ -42,37 +46,47 @@ footer{
 ======================*/
 .logo-up
 {
+    display: flex;
+    justify-content:space-between;
     width: 100%;
     background: hsl(0, 0%, 0%);
 }
-.menu{
-    display:grid;
+.menu
+{
+    display:inline-block;
     /*background-color: hsl(207, 85%, 69%);*/
     padding: 0.2em 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.join, .dates, .who
-{
-    float: right;
-    display: block;
+    width: 10%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:0;
 }
 
-.join{
-    color: hsl(205deg, 65%, 41%);
+.menu a
+{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+}
+.menu li
+{
+    /*display:inline-block;*/
+    float: right;
+    width:10%;
+    padding:5px 10px;
+    background-color:#000;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
 }
 
-.who{
-    color: hsl(145deg, 97%, 31%);
-}
+.menu li:hover
+{
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(0, 0%, 0%);
 
-.dates{
-    color: hsl(359deg, 79%, 57%);
 }
 
 /*====================
