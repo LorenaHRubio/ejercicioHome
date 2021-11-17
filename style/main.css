@@ -12,6 +12,7 @@ body{
 }
 
 header{
+    /*position: fixed;*/
     display: flex;
     height: 10.2vh;
     justify-content:space-between;
@@ -36,21 +37,23 @@ footer{
 .footer-element{
     margin-bottom: 1em;
 }
+
 /*====================
-========MENU==========
+========LOGO==========
 ======================*/
-.logo-up
+.logo
 {
+
     display: flex;
     justify-content:space-between;
     width: 100%;
     background: hsl(0, 0%, 0%);
-}
-.menu
-{
-    font-size:0;
+    height: 4em;
 }
 
+/*====================
+========MENU==========
+======================*/
 .menu a
 {
     text-decoration:none;
@@ -59,10 +62,8 @@ footer{
 }
 .menu li
 {
-    margin:5em 1em ;
+    margin: 2em;
     float: right;
-    padding:5em 10em;
-    border:1em solid #000;
     text-align:center;
     color:hsl(0, 0%, 100%);
 }
@@ -79,7 +80,7 @@ footer{
 ======================*/
 
 h1, h2, h3, h4, h5, h6, a, p{
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 
 h1, h2, h3, h4 {
@@ -126,54 +127,30 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-/*====================
-========Image=========
-======================*/
-
-.general img{
-    width: 100%;
-}
-
-/*====================
-========Logo=========
-======================*/
-    
-.logo{
-    display: flex;
-    width: max-content;
-    position: relative;
-    text-align: left;
-}
 
 
-
-/*====================
-=========IMAGEN=========
-======================*/
-
-.image-down img
-{
-    width: 100%;
-}
 
 /*=======================================
 =========IMAGEN CON TEXTO ENCIMA=========
 =========================================*/
 
-.image-down
+.slider img
 {
+    width: 100%;
     position: relative;
     text-align: center;
+    z-index: 1001;
     
 }
 
-.image-down__text
+.slider__text
 {
     
     text-align: center;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    z-index: 1002;
+    top: 35%;
+    left: 35%;
 }
 
 /*=========================
@@ -192,7 +169,7 @@ a:focus, a:hover {
 
 .new__second, .new__third
 {
-    padding-left: 1em;
+    margin-left: 6em;
 }
 
 .new__first img, .new__second img, .new__third img 
@@ -202,6 +179,7 @@ a:focus, a:hover {
     max-width: 100%;
 }
 
+
 .new__first p, .new__second p, .new__third p
 {
     
@@ -209,13 +187,28 @@ a:focus, a:hover {
     text-overflow: ellipsis;
 }
 .new p{
+    text-align: center;
+    margin-top: 2em;
     box-align: end;
 }
+
+/*=====================
+=========ABAJO=========
+=======================*/
+
+.down
+{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /*====================
 =========CRUD=========
 ======================*/
 
-/*.crud{
+.crud{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -354,7 +347,7 @@ table
 .author p:hover
 {
     color: hsl(0, 100%, 50%); /*por ejemplo, que se ponga en rojo cuando pasa por encima */
-/*}*/
+}
 
 @media (max-width:479px) {
 
