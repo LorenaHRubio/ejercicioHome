@@ -8,14 +8,14 @@ body{
     flex-direction:column;    
     margin: 1em auto;
     min-height: 100vh;
-    width: 90%;
+    width: 100%;
 }
 
 header{
+    background-color: hsla(0, 0%, 0%, 0.5);
     position: fixed;
-    display: flex;
+    z-index: 1003;
     height: 10.2vh;
-    justify-content:space-between;
 }
 
 
@@ -54,8 +54,12 @@ footer{
 /*====================
 ========MENU==========
 ======================*/
+.menu{
+    display: flex;
+}
 .menu a
 {
+    
     text-decoration:none;
     color:inherit;
     font-size:14px;
